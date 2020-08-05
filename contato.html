@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Famiglia Bubani</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="/bootstrap/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+     
+        <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/public/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+        <a name="top"></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class=" navbar-brand" href="/index.html">
+                <img src="/public/assets/Logomarca Famiglia Bubani.png">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/loja.html">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/revendedores.html">Revendedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="contato">
+            <div class="container-fluid text-center margin">
+                <h2>Contato</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text-left">
+                            <span class="w-socials ">
+                              <br><br>
+                                <a href="mailto:famigliabubani@gmail.com" target="_blank">
+                                    <h3 title="Clique para me enviar um Email">
+                                        <img src="/public/assets/mail.png" width="50px">
+                                        &nbsp;famigliabubani@gmail.com</h3>
+                                </a>
+                                <a href="https://www.instagram.com/famigliabubani/" target="_blank">
+                                    <h3 title="Instagram">
+                                        <img src="/public/assets/instagram.png" width="50px">
+                                        &nbsp;@famigliabubani</h3>
+                                </a>
+                                <a href="https://facebook/famigliabubani" target="_blank">
+                                    <h3 title="Facebook">
+                                        <img src="/public/assets/facebook.png" width="50px">
+                                        &nbsp;/famigliabubani</h3>
+                                </a>
+                                <a href="https://wa.me/5531992730000" target="_blank">
+                                    <h3 title="Clique para falar comigo no WhatsApp"><img src="/public/assets/zap.png" width="50px">
+                                        &nbsp;(31) 99273-0000</h3>
+                                </a>
+                                <img src="/public/assets/qrcodezap.png" width="150px" title="Mire a câmera do celular aqui">
+
+                                 </span>
+                        </div>
+
+                        <div class="container col-lg-6 footer-menu">
+                            <h3>Endereço</h3>
+                            <div id="googleMap" style="width:100%;height:400px;"></div>
+
+                            <script>
+                            function myMap() {
+                            var mapProp= {
+                              center:new google.maps.LatLng(-19.935852, -43.955785),
+                              zoom:5,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            }
+                            </script>
+                            
+                            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="container-fluid text-center margin navbar">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-lg-4">
+                            <h4>Famiglia Bubani</h4>
+                            <br>
+                            <p class="w-socials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. Suspendisse id tempor elit. Nunc porttitor eleifend nisl id blandit. Sed dapibus bibendum gravida. Phasellus fermentum pulvinar ante nec pretium.</p>
+                        </div>
+    
+                        <div class="col-lg-4">
+                            <h4>Menu
+                                <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+                            </h4>
+                            <br>
+                            <div class="footer-menu">
+                                <ul >
+                                    <li >
+                                        <a href="#">Início</a>
+                                    </li>
+                                    <li >
+                                        <a href="/quemsomos.html">Quem Somos</a>
+                                    </li>
+                                    <li >
+                                        <a href="/loja.html">Loja</a>
+                                    </li>
+                                    <li >
+                                        <a href="/Revendedores.html">Revendedores</a>
+                                    </li>
+                                    <li >
+                                        <a href="/cardapio.html">Cardapio</a>
+                                    </li>
+                                    <li >
+                                        <a href="/contact.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4">
+                            <div id="contact-2" class="widget widget_contact">
+                                <h4>Contato</h4>
+                                <br>
+                                <div class="w-contacts-item">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="w-socials" title="Endereço">&nbsp;Rua General Dionisío Cerqueira 306, Gutierrez, Belo Horizonte - MG</span>
+                                </div>
+    
+                                <div class="w-contacts-item for_phone">
+                                    <i class="fa fa-phone"></i>
+                                    <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 99273-0000</span>
+                                </div>
+    
+                                <div class="w-contacts-item for_email">
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="w-socials">
+                                        <a href="mailto:famigliabubani@gmail.com" title="E-mail">&nbsp;famigliabubani@gmail.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="w-socials">
+                                <div class="socialm">
+                                    <a href="https://www.instagram.com/famigliabubani/" target="_blank">
+                                        <img src="/public/assets/instagram.png" width="40px" title="Instagram">
+                                    </a>
+                                </div>
+                                &nbsp;
+                                <div class="socialm">
+                                    <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
+                                        <img src="/public/assets/facebook.png" width="40px" title="Facebook">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <footer class="container-fluid text-center margin bg-footer">
+        Copyright© 2020 <a href="www.kriari.net">Kriari Informática</a>. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
