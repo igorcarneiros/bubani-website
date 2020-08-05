@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
      
         <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
@@ -37,14 +38,40 @@
     <body>
         <a name="top"></a>
 
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <li class="nav-item">
+                <a class="menu" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/loja.html">Loja</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/revendedores.html">Revendedores</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/cardapio.html">Cardápio</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="#">Contato</a>
+            </li>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class=" navbar-brand" href="/index.html">
                 <img src="/public/assets/Logomarca Famiglia Bubani.png">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -61,11 +88,14 @@
                         <a class="nav-link" href="/cardapio.html">Cardápio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contato.html">Contato</a>
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
             </div>
+
+            <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>  
         </nav>
+
 
         <section id="contato">
             <div class="container-fluid text-center margin">
@@ -85,10 +115,10 @@
                                         <img src="/public/assets/instagram.png" width="50px">
                                         &nbsp;@famigliabubani</h3>
                                 </a>
-                                <a href="https://facebook/famigliabubani" target="_blank">
+                                <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
                                     <h3 title="Facebook">
                                         <img src="/public/assets/facebook.png" width="50px">
-                                        &nbsp;/famigliabubani</h3>
+                                        &nbsp;/pastificiofamigliabubani</h3>
                                 </a>
                                 <a href="https://wa.me/5531992730000" target="_blank">
                                     <h3 title="Clique para falar comigo no WhatsApp"><img src="/public/assets/zap.png" width="50px">
@@ -101,20 +131,24 @@
 
                         <div class="container col-lg-6 footer-menu">
                             <h3>Endereço</h3>
-                            <div id="googleMap" style="width:100%;height:400px;"></div>
-
+                            <div id="map" style="width:100%;height:400px;"></div>
+                
                             <script>
-                            function myMap() {
-                            var mapProp= {
-                              center:new google.maps.LatLng(-19.935852, -43.955785),
-                              zoom:5,
-                            };
-                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                            }
-                            </script>
-                            
-                            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
+                                // Initialize and add the map
+                                function initMap() {
+                                  // The location of Uluru
+                                  var uluru = {lat: -19.935852, lng: -43.955785};
+                                  // The map, centered at Uluru
+                                  var map = new google.maps.Map(
+                                      document.getElementById('map'), {zoom: 4, center: uluru});
+                                  // The marker, positioned at Uluru
+                                  var marker = new google.maps.Marker({position: uluru, map: map});
+                                }
+                                    </script>
+                                    <script defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_LIP1NUFJgtrfBDOi8XTJB1u9tn30iuU&callback=initMap">
+                                    </script>
+                                
                         </div>
                     </div>
                 </div>
@@ -122,7 +156,7 @@
 
 
 
-            <div class="container-fluid text-center margin navbar">
+            <div class="container-fluid text-center margin navbar cardapio">
                 <div class="container">
                     <div class="row">
     
@@ -140,7 +174,7 @@
                             <div class="footer-menu">
                                 <ul >
                                     <li >
-                                        <a href="#">Início</a>
+                                        <a href="/index.html">Início</a>
                                     </li>
                                     <li >
                                         <a href="/quemsomos.html">Quem Somos</a>
@@ -149,13 +183,13 @@
                                         <a href="/loja.html">Loja</a>
                                     </li>
                                     <li >
-                                        <a href="/Revendedores.html">Revendedores</a>
+                                        <a href="/revendedores.html">Revendedores</a>
                                     </li>
                                     <li >
                                         <a href="/cardapio.html">Cardapio</a>
                                     </li>
                                     <li >
-                                        <a href="/contact.html">Contato</a>
+                                        <a href="#">Contato</a>
                                     </li>
                                 </ul>
                             </div>
@@ -185,7 +219,7 @@
                             <br>
                             <div class="w-socials">
                                 <div class="socialm">
-                                    <a href="https://www.instagram.com/famigliabubani/" target="_blank">
+                                    <a href="https://www.instagram.com/famigliabubani" target="_blank">
                                         <img src="/public/assets/instagram.png" width="40px" title="Instagram">
                                     </a>
                                 </div>
@@ -205,7 +239,8 @@
     </div>
     
     <footer class="container-fluid text-center margin bg-footer">
-        Copyright© 2020 <a href="www.kriari.net">Kriari Informática</a>. Todos os direitos reservados.
+        Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos reservados.
     </footer>
+    
 </body>
 </html>

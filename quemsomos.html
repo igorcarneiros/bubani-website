@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
      
         <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
@@ -37,19 +38,45 @@
     <body>
         <a name="top"></a>
 
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <li class="nav-item">
+                <a class="menu" href="#">Quem Somos<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/loja.html">Loja</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/revendedores.html">Revendedores</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/cardapio.html">Cardápio</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu" href="/contato.html">Contato</a>
+            </li>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+          }
+          </script>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class=" navbar-brand" href="/index.html">
                 <img src="/public/assets/Logomarca Famiglia Bubani.png">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Quem Somos<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/loja.html">Loja</a>
@@ -65,56 +92,57 @@
                     </li>
                 </ul>
             </div>
+
+            <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>  
         </nav>
 
-        <section id="sobre">
-            <div class="container-fluid text-center margin">
-                <h2>Quem Somos</h2>
-                <div class="container">
-                    <br>
-                    <div class="row ">
-                        <div class="col-lg-6">
-                            <a>
-                                <img src="/public/assets/Logomarca Famiglia Bubani.png" width="80%">
-                                <br><br>
-                            </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <h3 class="text-justify">&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. 
-                            </h3>
-                        </div>
 
-                    </div>
-                </div>
+        <section id="sobre">
+            <div class="container-fluid text-center">
+                <br>
+                <img src="/public/assets/Logomarca Famiglia Bubani.png" width="30%">
+                <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. Suspendisse id tempor elit. Nunc porttitor eleifend nisl id blandit. Sed dapibus bibendum gravida. Phasellus fermentum pulvinar ante nec pretium.</p>
+                </p>
+                <br><br>
             </div>
         </section>
-
-        <div class="container">
-            <div class="row text-center margin">
-                <div class="col-lg-4">
-                    <h4>Missão</h4>
+        <br>
+        <section id="sobre2"><br><br><br>
+            <div class="poema">
+                <p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. </p>
-                </div>
+                    "Da Itália ao Brasil <br>
+                    Viemos em bando <br>
+                    Vinho no barril <br>
+                    Gritando e cantando <br> <br>
+                    
+                    Aos cuidados da vó <br>
+                    Certeza da boa colheita <br>
+                    Nossa bíblia sagrada <br>
+                    Nosso livro de receita! <br><br>
+                    
+                    E assim chegamos <br>
+                    Missionários pregando <br>
+                    De Floripa a Forteleza <br>
+                    Muita pizza e bolognesa! <br><br>
+                    
+                    A tradição da Romagna <br>
+                    Com tempero mineiro <br>
+                    E naquele livro antigo <br>
+                    Um toque brasileiro... <br><br>
+                    
+                    Agora aqui estamos <br>
+                    Neste pastifício <br>
+                    E tudo o que te desejamos <br>
+                    É “un buon appetito!"<br><br>
 
-                <div class="col-lg-4">
-                    <h4>Visão</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. </p>
-                </div>
-
-                <div class="col-lg-4">
-                    <h4>Valores</h4>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. </p>
-                </div>
-
-            </div>
-        </div>
+                </p>
+            </div><br><br>
+        </section>
 
 
-
-        <div class="container-fluid text-center margin navbar">
+        <div class="container-fluid text-center margin navbar cardapio">
             <div class="container">
                 <div class="row">
 
@@ -132,22 +160,22 @@
                         <div class="footer-menu">
                             <ul >
                                 <li >
-                                    <a href="#">Início</a>
+                                    <a href="/index.html">Início</a>
                                 </li>
                                 <li >
-                                    <a href="/quemsomos.html">Quem Somos</a>
+                                    <a href="#">Quem Somos</a>
                                 </li>
                                 <li >
                                     <a href="/loja.html">Loja</a>
                                 </li>
                                 <li >
-                                    <a href="/Revendedores.html">Revendedores</a>
+                                    <a href="/revendedores.html">Revendedores</a>
                                 </li>
                                 <li >
                                     <a href="/cardapio.html">Cardapio</a>
                                 </li>
                                 <li >
-                                    <a href="/contact.html">Contato</a>
+                                    <a href="/contato.html">Contato</a>
                                 </li>
                             </ul>
                         </div>
@@ -183,7 +211,7 @@
                             </div>
                             &nbsp;
                             <div class="socialm">
-                                <a href="https://facebook/famigliabubani" target="_blank">
+                                <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
                                     <img src="/public/assets/facebook.png" width="40px" title="Facebook">
                                 </a>
                             </div>
@@ -197,8 +225,9 @@
 </div>
 
 <footer class="container-fluid text-center margin bg-footer">
-    Copyright© 2020 <a href="www.kriari.net">Kriari Informática</a>. Todos os direitos reservados.
+    Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos reservados.
 </footer>
+
 
 </body>
 </html>

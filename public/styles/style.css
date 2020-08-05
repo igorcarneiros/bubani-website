@@ -2,28 +2,38 @@ body {
   background-image: url("/public/assets/");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Comfortaa', monospace;
+  font-family: 'Comfortaa', cursive;
   
 }
 h1{
   padding-top: 20px;
   text-align: center;
-  font-family: 'Comfortaa', monospace;
+  font-family: 'Comfortaa', cursive;
   color: #3d3030;
   font-weight: bold;
 }
+h2{
+    color: #AB4C2C;
+}
 h3{
+  color: #4C543C;
   font-size: 20px;
 }
+h4{
+  color: #4C543C;
+}
+p{
+  text-align: left;
+}
 .navbar {
-  background-color: #fafafa !important;
+  background-color: #f0f0f0 !important;
   font-weight: bold;
 }
 .navbar-brand img {
   width: 100px;
 }
 .nav-link {
-  color: black !important;
+  color: #4C543C !important;
 }
 .nav-link:hover {
   color: #929292 !important;
@@ -32,18 +42,103 @@ h3{
   padding-top: 50px;
   padding-bottom: 50px;
 }
+video{
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+/* quem somos */
+#sobre{
+  background-image: url(/public/assets/pics/Produtos\ Ilustrativas/25052018-IMG_9627.jpg);
+    
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#sobre p{
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#sobre2{
+  background-image: url(/public/assets/pics/Pessoas/24052018-IMG_9179-2.jpg);
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#sobre2 p{
+  font-family: cursive;
+  font-size: 30px;
+  color: #DCD4C4;
+  padding-left: 50px;
+  padding-right: 50px;
+ 
+}
+.poema{
+  border-radius: 8px;
+  margin: 0px 900px 0px 80px;
+  text-align: center;
+  
+  background-color: #1f1f1fCC;
+}
+
+
+/* sidepanel navigation */
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4C543C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #DCD4C4;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #AB4C2C;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.openbtn {
+  background-color: #f0f0f0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+.openbtn:hover {
+  background-color:#DCD4C4;
+  border-radius: 8px;
+}
 
 
 
 
-
-
-
+/* cardapio section */
 #cardapio p{
-  color: #2a7030;
+  color: #4C543C;
 }
 .cardapio {
-  background-color: #c76e6e !important;
+  background-color: #dee4d2 !important;
 }
 .cardapio .row {
   margin-top: 50px;
@@ -62,6 +157,27 @@ h3{
 iframe{
   border-radius: 8px;
 }
+
+/* download button */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  
+  background-color: RoyalBlue;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
@@ -88,7 +204,7 @@ iframe{
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #088734;
+  background-color: #AB4C2C;
 }
 .over:hover .overlay {
   opacity: 80%;
@@ -104,16 +220,6 @@ iframe{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.about {
-  background-color: #bebebe80;
-}
-#publicacoes img {
-  width: 100%;
-  height: 240px;
-}
-#referencias h3 {
-  text-align: justify;
 }
 
 
@@ -134,7 +240,7 @@ iframe{
  
   text-align: left;
   font-weight: normal;
-  color: #088734;
+  color: #4C543C;
 }
 .w-socials a{
   cursor: pointer;
@@ -150,13 +256,13 @@ iframe{
 .footer-menu ul li a{
   cursor: pointer;
   font-weight: normal;
-  color: black;
+  color: #4C543C;
 }
 .footer-menu ul  {
   list-style: none; 
 }
 .footer-menu ul li:before {
- color: #088734;
+ color: #AB4C2C;
   content: "↳‎‎‎ ";
  
 }
