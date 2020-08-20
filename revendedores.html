@@ -106,20 +106,20 @@
             <div class="limite row">
                 <div class="tab col-lg-4">
                     <div class="subnav">
-                        <button class="tablinks subnavbtn">Belo Horizonte &nbsp;<i
-                                class="fa fa-caret-down"></i></button>
-                        <div class="subnav-content">
-                            <a class="tablinks" onclick="openCity(event, 'sc1')">Gutierrez/Grajaú</a>
-                            <a class="tablinks" onclick="openCity(event, 'sc2')">Santo Agostinho/Lourdes</a>
-                            <a class="tablinks" onclick="openCity(event, 'sc3')">Savassi/Funcionários</a>
-                            <a class="tablinks" onclick="openCity(event, 'sc4')">Cidade Jardim/São Bento</a>
-                            <a class="tablinks" onclick="openCity(event, 'sc5')">Cidade Nova</a>
-                        </div>
-                    </div>
-                    <button class="tablinks" onclick="openCity(event, 'ds')">Grande BH</button>
-                    <button class="tablinks" onclick="openCity(event, 'fls')">Outras cidades</button>
-                </div>
 
+                        <button id="qsr">Seja um revendedor!</button> <br><br>
+
+                        <button class="tablinks subnavbtn">Belo Horizonte &nbsp;<span>&#8675;</span></button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc1')" id="defaultOpen">Gutierrez/Grajaú</button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc2')">Santo Agostinho/Lourdes</button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc3')">Savassi/Funcionários</button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc4')">Cidade Jardim/São Bento</button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc5')">Cidade Nova</button>
+                        <br><br>
+                        <button class="tablinks" onclick="openCity(event, 'ds')">Grande BH</button>
+                        <button class="tablinks" onclick="openCity(event, 'fls')">Outras cidades</button>
+                    </div>
+                </div>
                 <div class="col-lg-4"> <br>
                     <div id="sc1" class="tabcontent">
                         <p class="example">
@@ -220,42 +220,36 @@
                         </p>
                     </div>
                 </div>
-
-                <script>
-                    function openCity(evt, cityName) {
-                        var i,
-                            tabcontent,
-                            tablinks;
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i]
-                                .className
-                                .replace(" active", "");
-                        }
-                        document
-                            .getElementById(cityName)
-                            .style
-                            .display = "block";
-                        evt.currentTarget.className += " active";
-                    }
-
-                    // Get the element with id="defaultOpen" and click on it
-                    document
-                        .getElementById("defaultOpen")
-                        .click();
-                </script>
-
-                <div class="col-lg-4">
-                    <button id="qsr">
-                        <h1>🍝 Seja um revendedor!</h1>
-                    </button>
-                </div>
-
             </div>
+            <script>
+                function openCity(evt, cityName) {
+                    var i,
+                        tabcontent,
+                        tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i]
+                            .className
+                            .replace(" active", "");
+                    }
+                    document
+                        .getElementById(cityName)
+                        .style
+                        .display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document
+                    .getElementById("defaultOpen")
+                    .click();
+            </script>
+
+
     </section>
 
 
@@ -354,7 +348,7 @@
     <div id="modal" class="hide">
         <div class="content">
             <div class="header">
-                <a href="#">Fechar</a>
+                <a href="#" title="Fechar">Fechar</a>
                 <h1>&nbsp; Seja um revendedor!</h1>
 
             </div>
@@ -363,8 +357,7 @@
                     <label for="fname">
                         <h3>Nome completo</h3>
                     </label>
-                    <input type="text" class="selected" id="fname" name="firstname"
-                        placeholder="Digite seu nome completo">
+                    <input type="text" class="selected" id="fname" name="name" placeholder="Digite seu nome completo">
 
                     <label for="lname">
                         <h3>E-mail</h3>
@@ -372,13 +365,10 @@
                     <input type="text" class="selected" id="lname" name="email" placeholder="Digite seu E-mail">
 
                     <label for="cidade">
-                        <h3>Cidade</h3>
+                        <h3>Nome da empresa</h3>
                     </label>
-                    <select id="RJ" name="cidade">
-                        <option class="selected" value="Rio de Janeiro">Belo Horizonte</option>
-                        <option class="selected" value="Campos dos Goycatazes">Grande BH</option>
-                        <option class="selected" value="Outro">Outras cidades</option>
-                    </select>
+                    <input type="text" class="selected" id="ename" name="company"
+                        placeholder="Digite o nome da empresa">
 
                     <label for="subject">
                         <h3>Mensagem</h3>
