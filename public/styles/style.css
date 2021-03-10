@@ -93,7 +93,8 @@ p {
 #sobre p {
   background-color: #1f1f1fd8;
   border-radius: 8px;
-  padding: 10%;
+  margin-top: 20px;
+  padding: 20px;
 
   text-align: center;
   font-size: 15px;
