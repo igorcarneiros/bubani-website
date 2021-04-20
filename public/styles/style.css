@@ -95,6 +95,7 @@ p {
   border-radius: 8px;
   margin-top: 20px;
   padding: 20px;
+  font-weight: bold;
 
   text-align: center;
   font-size: 15px;
@@ -105,7 +106,7 @@ p {
   font-family: "Courgette", cursive;
   text-align: center;
   font-size: auto;
-  color: #dcd4c4;
+  color: #dcd4c4;  
 }
 @media (min-width: 992px) {
   #sobre .col-lg-6 {
@@ -179,10 +180,15 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #4c543c;
+  background-color: #4c543cfb;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+}
+
+.sidepanel li {
+  list-style-type: none;
+  padding-bottom: 15px;
 }
 
 .sidepanel a {
@@ -235,7 +241,12 @@ p {
 #cardapio2 span {
   font-size: 20px;
 }
+#cardapio2 li {
+  padding-top: 20px;
+  color: #c0826d;
+}
 #cardapio2 .peso {
+  padding-left: 20px;
   font-size: 15px;
   font-weight: 500;
 }
